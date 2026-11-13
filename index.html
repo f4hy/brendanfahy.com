@@ -59,7 +59,7 @@
     -webkit-text-size-adjust: 100%;
   }
   h1 { margin: 0 0 0.5rem; font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; }
-  h2 {
+  h2, summary {
     margin: 3rem 0 0.75rem;
     font-size: 0.8rem;
     font-weight: 600;
@@ -67,6 +67,8 @@
     text-transform: uppercase;
     color: var(--muted);
   }
+  summary { cursor: pointer; width: fit-content; }
+  summary:hover, summary:focus-visible { color: var(--fg); }
   p { margin: 0 0 1rem; }
   a { color: inherit; text-decoration-color: var(--rule); text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
   a:hover, a:focus-visible { text-decoration-color: currentColor; }
@@ -93,6 +95,10 @@
   <h2>Projects</h2>
   <ul>
     <li>
+      <a href="https://www.radarvan.com/">radarvan</a>
+      <span class="note">Stats, ratings and win prediction for Command &amp; Conquer: Generals Zero Hour games. <a href="https://github.com/f4hy/radarvan">Source</a>.</span>
+    </li>
+    <li>
       <a href="https://github.com/f4hy/httpx-hedged">httpx-hedged</a>
       <span class="note">Request hedging for httpx.</span>
     </li>
@@ -107,18 +113,6 @@
     <li>
       <a href="https://github.com/f4hy/rhll">rhll</a>
       <span class="note">HyperLogLog for Python, implemented in Rust.</span>
-    </li>
-    <li>
-      <a href="https://www.agenticale.beer/">agenticale.beer</a>
-      <span class="note">The autonomous, self-improving brewery.</span>
-    </li>
-    <li>
-      <a href="https://www.seventimeseight.com/">seventimeseight.com</a>
-      <span class="note">The answer to seven times eight.</span>
-    </li>
-    <li>
-      <a href="https://www.freeblankpaper.com/">freeblankpaper.com</a>
-      <span class="note">Free blank paper.</span>
     </li>
   </ul>
 
@@ -141,6 +135,24 @@
       <span class="note">Co-author, SIGIR 2019 workshop. Also <a href="https://patents.google.com/patent/US11783812">US Patent 11,783,812</a>.</span>
     </li>
   </ul>
+
+  <details>
+    <summary>Joke sites</summary>
+    <ul>
+      <li>
+        <a href="https://www.agenticale.beer/">agenticale.beer</a>
+        <span class="note">The autonomous, self-improving brewery.</span>
+      </li>
+      <li>
+        <a href="https://www.seventimeseight.com/">seventimeseight.com</a>
+        <span class="note">The answer to seven times eight.</span>
+      </li>
+      <li>
+        <a href="https://www.freeblankpaper.com/">freeblankpaper.com</a>
+        <span class="note">Free blank paper.</span>
+      </li>
+    </ul>
+  </details>
 </main>
 
 </body>
